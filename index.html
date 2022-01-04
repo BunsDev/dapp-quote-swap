@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First HTML Page</title>
+</head>
+<body>
+    <h1>Get Quote and then Swap</h1>
+
+    <br><br>
+    
+    <!-- TODO: Display out in the same page and show estimatedGas -->
+    <form action="https://api.1inch.io/v4.0/1/quote" method="GET">
+        <label>
+            <input type="number" name="amount" id="amount">
+        </label>
+        <label>
+            From:
+            <select name="fromTokenAddress" id="fromTokenAddress">
+            </select>
+        </label>
+        <label>
+            To:
+            <select name="toTokenAddress" id="toTokenAddress">
+            </select>
+        </label>
+        <br><br>
+        <button type="submit">Get quote</button>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
